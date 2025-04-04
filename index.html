@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="logo-container">
-        <img src="/img/logo.png" alt="" class="logo" height="150px">
+        <img src="/img/logo.png" alt="" class="logo" >
       </div>
     <div class="background"></div>
     <div class="top-trigger"></div>
@@ -56,7 +56,7 @@
     <div class="sexopequeno"></div>
 </div>
 <div class="container">
-    <div class="sexopequeno"></div>
+    <div class="sexopequeno"><div class="shadow"></div><img src="/img/br (1).png" class="imagemsexualpeq"></div>
     <div class="sexopequeno"></div>
 </div>
 <div class="container">
@@ -89,6 +89,7 @@
 </div>
 
     <script>
+    const logo = document.querySelector('.logo');
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', function() {
@@ -97,7 +98,19 @@
         } else {
             navbar.classList.add('hidden'); 
         }
+        
     });
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset === 0) {
+            logo.classList.remove('hidden'); 
+            logo.classList.add('sex'); 
+        } else {
+            logo.classList.add('hidden'); 
+            logo.classList.remove('sex'); 
+        }
+    });
+
     </script>
 </body>
 </html>

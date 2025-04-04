@@ -3,11 +3,12 @@
     justify-content:space-evenly;
     height: 300px;
     width: 200px;
-    background-color: rgb(112, 6, 6);
+    background-color: rgb(27, 9, 94);
     align-items: center;
     margin-top: 100px;
     margin-right: 50px;
     border-radius: 20px;
+    
 }
 
 .sexogrande {
@@ -15,7 +16,7 @@
     justify-content:space-evenly;
     height: 300px;
     width: 500px;
-    background-color: rgb(112, 6, 6);
+    background-color: rgb(27, 9, 94);
     align-items: center;
     margin-top: 100px;
     margin-right: 50px;
@@ -29,3 +30,34 @@
     align-items: center; 
     gap: 20px; 
 }
+
+.sexogrande:hover {
+    height: 350px;
+    width: 550px;
+}
+
+.sexopequeno:hover {
+    height: 350px;
+    width: 250px;
+}
+
+.imagemsexualpeq {
+    width: 200px;
+    filter:blur(3px)
+}
+
+.sexopequeno:hover .imagemsexualpeq {
+    width: 250px;
+    animation: blur .4s ease-out forwards;
+}
+
+
+
+@keyframes blur {
+    0% {
+        filter:blur(3px)
+    }
+    100% {
+        filter:blur(0px)
+    }
+  }
