@@ -3,11 +3,11 @@
     justify-content:space-evenly;
     height: 300px;
     width: 200px;
-    background-color: rgb(27, 9, 94);
+    background-color: var(--cr-cor2);
     align-items: center;
     margin-top: 100px;
     margin-right: 50px;
-    border-radius: 20px;
+    border-radius: var(--borderradious-1);
     
 }
 
@@ -16,11 +16,11 @@
     justify-content:space-evenly;
     height: 300px;
     width: 500px;
-    background-color: rgb(27, 9, 94);
+    background-color: var(--cr-cor2);
     align-items: center;
     margin-top: 100px;
     margin-right: 50px;
-    border-radius: 20px;
+    border-radius: var(--borderradious-1);
 }
 
 
@@ -32,22 +32,22 @@
 }
 
 .sexogrande:hover {
-    height: 350px;
-    width: 550px;
+    transform: scale(1.1);
+
 }
 
 .sexopequeno:hover {
-    height: 350px;
-    width: 250px;
+    transform: scale(1.1);
+
 }
 
 .imagemsexualpeq {
-    width: 200px;
-    filter:blur(3px)
+    width: 150px;
+    filter:blur(3px);
+    animation: unblur .4s ease-out forwards;
 }
 
 .sexopequeno:hover .imagemsexualpeq {
-    width: 250px;
     animation: blur .4s ease-out forwards;
 }
 
@@ -59,5 +59,14 @@
     }
     100% {
         filter:blur(0px)
+    }
+  }
+
+  @keyframes unblur {
+    0% {
+        filter:blur(0px)
+    }
+    100% {
+        filter:blur(3px)
     }
   }

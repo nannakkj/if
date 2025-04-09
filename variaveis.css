@@ -1,6 +1,34 @@
 :root {
     --texto1: #abb1ff;
 
-    --ff-teste:"Boldonse", sans-serif;
+    --ff-boldonse:"Boldonse", sans-serif;
+
+    /*cores*/
+
+    --cr-background1: linear-gradient(to bottom, rgb(36, 14, 126) 15%, rgb(86, 98, 209) 95%);
+    --cr-cor1:rgb(49, 24, 141);
+    --cr-cor1-1:rgba(71, 42, 150, 0.884);
+    --cr-cor2:rgb(27, 9, 94);
+
+    /*tamanhos*/
+
+    --fs-1: 3.6rem;
+    --fs-2: 2.4rem;
+    --fs-3: 2rem;
+    --fs-4: 1.7rem;
+    --fs-5: 1.6rem;
+    --fs-6: 1.5rem;
+    --fs-7: 1.4rem;
+    --fs-f8: 1.2rem;
+
+    /*bolds*/
+
+    --weight-regular: 400;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    
+    /*border*/
+
+    --borderradious-1: 20px;
 }
 
